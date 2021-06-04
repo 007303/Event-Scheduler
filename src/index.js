@@ -8,14 +8,11 @@ const store=Store()
 store.subscribe(()=>{
   console.log(store.getState())
 })
-console.log(store.getState())
 ReactDOM.render(
-  <React.StrictMode>
     <Provider store={store}>
     <BrowserRouter>
     <App />
     </BrowserRouter>
-    </Provider>
-  </React.StrictMode>,
+    </Provider>,
   document.getElementById('root')
 )

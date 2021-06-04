@@ -79,7 +79,6 @@ export const events=()=>{
             }
         })
              .then((response)=>{
-                 console.log(response.data)
                  dispatch(allEvents(response.data))
              })
              .catch((error)=>{
